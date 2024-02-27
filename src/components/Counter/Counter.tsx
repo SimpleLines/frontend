@@ -1,5 +1,7 @@
 import { useState, FC } from 'react';
 
+import './Counter.scss';
+
 export const Counter: FC = () => {
     const [val, setVal] = useState(0);
     const handler = () => {
