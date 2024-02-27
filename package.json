@@ -4,8 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "webpack --config webpack.config.js",
-        "test": "echo my test"
+        "start": "webpack serve --env port=300",
+        "build:prod": "webpack --env mode=production --config webpack.config.ts",
+        "build:dev": "webpack --env mode=development --config webpack.config.ts"
     },
     "keywords": [],
     "author": "Konstantin Voronin",
@@ -18,7 +19,8 @@
         "ts-node": "^10.9.2",
         "typescript": "^5.3.3",
         "webpack": "^5.90.3",
-        "webpack-cli": "^5.1.4"
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.2"
     },
     "dependencies": {
         "tspath": "^1.2.10"
